@@ -66,7 +66,7 @@ def geocode(address,sensor, **geo_args):
 
 
 
-reader = csv.reader(open('/Users/rick/Documents/Hovee Names/ten_k_people.csv', "rb"), delimiter = ",", skipinitialspace=True)
+reader = csv.reader(open('ten_k_people.csv', "rb"), delimiter = ",", skipinitialspace=True)
 
 
 list = []
@@ -104,7 +104,7 @@ for row in list:
 
 print i 
 
-resultFile = open(output_filename, 'wb') #"/Users/rick/Documents/Hovee Names/ten_k_people_lat_lng.csv",'wb')
+resultFile = open(output_filename, 'wb') 
 for row in output:
     resultFile.write(row + '\n')
 
